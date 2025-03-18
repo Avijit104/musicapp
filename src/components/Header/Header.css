@@ -20,8 +20,9 @@
 
 .home-search{
     display: flex;
-    width: 45%;
+    width: 35%;
     justify-content: space-between;
+    margin-right: 200px;
     
 }
 /* logo */
@@ -31,7 +32,7 @@
     color: white;
 }
 .logo-color{
-    color: rgb(8, 148, 8);
+    color: #1ed760;
 }
 
 
@@ -57,7 +58,7 @@
     background-color: #1f1f1f;   
     border-radius: 25px;
     padding: 3px 0px;
-    width: 65%;
+    width: 80%;
     overflow: hidden;
 }
 .search-container form{
@@ -162,4 +163,42 @@
 }
 #login:hover{
     color: #000000;
+}
+#profile{
+    margin-right: 50px;
+}
+
+#profileMenu{
+    position: absolute;
+    right: 30px;
+    top: 70px;
+    /* border: 1px solid white; */
+    background-color: #1f1f1f;
+    display: none;
+    border-radius: 10px;
+}
+#profileMenu ul{
+    list-style: none;   
+}
+#profileMenu ul li button{
+    width: 170px;
+    text-align: left;
+    padding: 12px 10px ;
+    color: #ffffff;
+    background-color: #1f1f1f;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+#profileMenu ul li button:hover{
+    background-color: #3d3c3c;
+}
+#accountBtn{
+    border-radius: 10px;
+}
+
+#profileMenu ul li #logoutBtn{
+    border-top: 1px solid #6e6e6e;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }

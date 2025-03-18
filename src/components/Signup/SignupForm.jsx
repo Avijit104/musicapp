@@ -1,11 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../Logo";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./SignupForm.css";
+import { useDispatch } from "react-redux";
+import authserv from "../../appwrite/authServ";
+import { login } from "../../store/authSlice";
 
 function SignupForm() {
-  const signupHandle = (e) => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [name, setUser] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPass] = useState("");
+  const signupHandle = async (e) => {
     e.preventDefault();
+    console.log(password)
+    try {
+      const session = await authserv.createAccount({name, email, password});
+      if(session){
+        const userdata = await authserv.getUserDetails();
+        if(userdata){
+          dispatch(login(userdata))
+          navigate("/")
+        }
+      }
+      
+    } catch (error) {
+      console.log(error)
+    }
   };
   return (
     <div className="signup-container">
@@ -21,6 +43,8 @@ function SignupForm() {
               name="user"
               id="user"
               placeholder="Username"
+              value={name}
+              onChange={(e) => (setUser(e.target.value))}
             />
           </div>
           <div className="email-input">
@@ -31,6 +55,8 @@ function SignupForm() {
               id="email"
               name="email"
               placeholder="Email"
+              value={email}
+              onChange={(e) => (setEmail(e.target.value))}
             />
           </div>
           <div className="password-input">
@@ -41,6 +67,8 @@ function SignupForm() {
               id="pass"
               name="pass"
               placeholder="password"
+              value={password}
+              onChange={(e) => (setPass(e.target.value))}
             />
           </div>
           <div className="signup-btn">

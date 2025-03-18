@@ -1,16 +1,25 @@
-import { useState } from "react";
-import { Header, LoginForm } from "./components";
+import { use, useEffect, useState } from "react";
+import { Footer, Header } from "./components";
 import { Outlet } from "react-router-dom";
+import authserv from "./appwrite/authServ";
+import { useDispatch } from "react-redux";
+import { login, logout } from "./store/authSlice";
+import { HomePage } from "./pages";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const dispatch = useDispatch();
+  useEffect(() => {
+    authserv.getUserDetails().then((userdata) => {
+      if (userdata) {
+        dispatch(login(userdata));
+      } else {
+        dispatch(logout());
+      }
+    });
+  },[]);
   return (
     <>
-      <Header />
-      <div>
-        <Outlet />
-      </div>
+      <Outlet/>
     </>
   );
 }

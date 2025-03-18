@@ -11,16 +11,17 @@ export class AuthServe {
     this.authAccount = new Account(this.authClient);
   }
 
-  async createAccount({ email, username, password }) {
+  async createAccount({ email, name, password }) {
     try {
+      console.log(password);
       const account = await this.authAccount.create(
         ID.unique(),
         email,
-        username,
-        password
+        password,
+        name
       );
       if (account) {
-        this.authLogin({ email, password });
+        return this.authLogin({ email, password });
       } else {
         return account;
       }
@@ -37,6 +38,26 @@ export class AuthServe {
       );
     } catch (err) {
       console.log("authServe :: authLogin :: ", err);
+    }
+  }
+  async getUserDetails() {
+    try {
+      const userdata = await this.authAccount.get();
+      if (userdata) {
+        return userdata;
+      } else {
+        return null;
+      }
+    } catch (error) {
+      console.log("authServe :: getUserData :: ", error);
+    }
+  }
+
+  async authLogout() {
+    try {
+      await this.authAccount.deleteSessions();
+    } catch (error) {
+      console.log("authServe :: authLogout :: ", error);
     }
   }
 }

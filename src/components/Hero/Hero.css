@@ -1,0 +1,26 @@
+.hero-main{
+    width: 99vw;
+    /* border: 1px solid white; */
+    background-color: #121212;
+    padding: 20px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 10px;
+
+}
+.hero-buttons button{
+    padding: 7px 20px ;
+    background-color: #363636;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+.hero-buttons button:focus{
+    background-color: white;
+    color: black;
+}

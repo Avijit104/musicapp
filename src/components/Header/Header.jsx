@@ -1,17 +1,59 @@
-import React from "react";
-import { useSelector } from "react-redux";
-
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Logo from "../Logo.jsx";
 import "./Header.css";
 import { Link, useNavigate } from "react-router-dom";
+import authserv from "../../appwrite/authServ.js";
+import { logout } from "../../store/authSlice.js";
 
 function Header() {
-  const auth = null; //useSelector((state) => state.auth.loginStaus)
+  const auth = useSelector((state) => state.auth.loginStatus);
+  const dispatch = useDispatch();
   const navigate = useNavigate();
+  const [display, setDisplay] = useState("none");
+  const [profileName, setProfileName] = useState("Profile");
+
+  useEffect(() => {
+    // setDisplay("none");
+    const profile = document.getElementById("profileMenu");
+    profile.style.display = display;
+  }, []);
+
+  const navigateElement = (item) => {
+    const profile = document.getElementById("profileMenu");
+    if (item.id === "profile") {
+      if (display === "block") {
+        profile.style.display = display;
+        setDisplay("none");
+      } else {
+        profile.style.display = display;
+        setDisplay("block");
+      }
+    } else {
+      navigate(item.path);
+    }
+  };
+
+  const handleProfile = (item) => {
+    if (item.id === "logoutBtn") {
+      authserv.authLogout().then(() => {
+        dispatch(logout());
+        const profile = document.getElementById("profileMenu");
+        setDisplay("none");
+        profile.style.display = display;
+      });
+    }
+    navigate(item.path);
+  };
+  const handleBrowse = (e) => {
+    e.preventDefault();
+    navigate('/hero')
+  }
+
   const nav = [
     {
       label: "Explore Premium",
-      path: "/premium/",
+      path: "/premium",
       visibility: auth,
       id: "premium",
     },
@@ -34,21 +76,63 @@ function Header() {
       id: "login",
     },
     {
-      label: "profile",
+      label: profileName,
       path: "/",
       visibility: auth,
       id: "profile",
     },
   ];
+
+  const profile = [
+    {
+      label: "Account",
+      id: "accountBtn",
+      path: "/account",
+    },
+    {
+      label: "Profile",
+      id: "profileBtn",
+      path: "/profile",
+    },
+    {
+      label: "Upgrade to Premium",
+      id: "premiumBtn",
+      path: "/premium",
+    },
+    {
+      label: "Support",
+      id: "supportBtn",
+      path: "/support",
+    },
+    {
+      label: "Download",
+      id: "downloadBtn",
+      path: "/download",
+    },
+    {
+      label: "Settings",
+      id: "settingsBtn",
+      path: "/settings",
+    },
+    {
+      label: "Logout",
+      id: "logoutBtn",
+      path: "/",
+    },
+  ];
   return (
     <header className="header">
       <nav className="navbar">
-          <Link to="/" >
-            <Logo />
-          </Link>
+        <Link to="/">
+          <Logo />
+        </Link>
         <div className="home-search">
           <div className="home">
-            <button>
+            <button
+              id="homeButton"
+              name="homeButton"
+              onClick={() => navigate("/")}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="33px"
@@ -88,7 +172,7 @@ function Header() {
                 </span>
               </div>
               <div className="browse-svg-conatainer">
-                <button>
+                <button onClick={handleBrowse}>
                   <span className="browse">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -134,13 +218,34 @@ function Header() {
             {nav.map((item) =>
               item.visibility ? (
                 <li key={item.label}>
-                  <button id={item.id} onClick={() => navigate(item.path)}>
+                  <button
+                    id={item.id}
+                    onClick={() => {
+                      navigateElement(item);
+                    }}
+                  >
                     {item.label}
                   </button>
                 </li>
               ) : null
             )}
           </ul>
+          <div id="profileMenu">
+            <ul>
+              {profile.map((profileItem) => (
+                <li key={profileItem.id}>
+                  <button
+                    id={profileItem.id}
+                    onClick={() => {
+                      handleProfile(profileItem);
+                    }}
+                  >
+                    {profileItem.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </nav>
     </header>

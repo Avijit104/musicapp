@@ -6,12 +6,11 @@ function HomeContainer({ children }) {
     <div
     style={{
       display: "flex",
-      marginTop: "20px",
+      marginTop: "-2px",
       padding: "5px",
       gap: "10px",
       width: "100%",
       boxSizing: "border-box",
-      overflow: "hidden",
     }}
     >
       {children}

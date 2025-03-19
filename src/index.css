@@ -7,3 +7,6 @@
   text-rendering: optimizeLegibility;
 }
 
+*::-webkit-scrollbar{
+  display: none;
+}

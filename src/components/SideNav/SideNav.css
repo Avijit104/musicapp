@@ -1,4 +1,7 @@
 .sidenav{
     background-color: #121212;
     padding: 20px;
+    width: 15vw;
+    height: 70vh;
+    border-radius: 15px;
 }

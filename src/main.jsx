@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Home, SideNav} from "./components/index.js";
+import { Home, InstallApp, SideNav} from "./components/index.js";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
 import { HomePage, LoginPage, SignupPage } from "./pages";
@@ -26,8 +26,8 @@ const router = createBrowserRouter([
             element: <SideNav />,
           },
           {
-            path: "/app",
-            element: <App/>
+            path: "/install",
+            element: <InstallApp />
           },
         ],
       },

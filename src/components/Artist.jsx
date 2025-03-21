@@ -17,10 +17,10 @@ function Artist(props) {
         width: "20%",
         height: "42vh",
         borderRadius: "15px",
-        marginTop: "10px",
+        marginTop: "0px",
         paddingBottom: "15px",
-        backgroundColor: isHover ? "#1f1f1f" : "#121212",
-        border: isHover ? "1px solid #1f1f1f" : "1px solid #121212",
+        backgroundColor: isHover ? "#1f1f1f" : "transparent",
+        border: isHover ? "1px solid #1f1f1f" : "1px solid transparent",
       }}
       onClick={handleArtist}
       onMouseEnter={() => setIsHover(true)}

@@ -8,6 +8,20 @@ import Hero from "./Hero/Hero";
 import SideNav from "./SideNav/SideNav";
 import Footer from "./Footer/Footer";
 import Home from "./InnerComponents/Home/Home";
+import PLayer from "./Player/PLayer";
+import InstallApp from "./InnerComponents/InstallApp/InstallApp";
 
-
-export { Header,Footer, Logo, LoginForm, SignupForm, AuthContainer, HomeContainer, Hero, SideNav, Home };
+export {
+  Header,
+  Footer,
+  Logo,
+  LoginForm,
+  SignupForm,
+  AuthContainer,
+  HomeContainer,
+  Hero,
+  SideNav,
+  Home,
+  PLayer,
+  InstallApp,
+};

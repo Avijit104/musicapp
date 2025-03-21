@@ -13,11 +13,12 @@ function MusicCard(props) {
     <div
       style={{
         width: "20%",
+        minWidth: "200px",
         minHeight: "42vh",
-        marginTop: "10px",
+        marginTop: "0px",
         borderRadius: "15px",
-        backgroundColor: isHover ? "#1f1f1f" : "#121212",
-        border: isHover ? "1px solid #1f1f1f" : "1px solid #121212",
+        backgroundColor: isHover ? "#1f1f1f" : "transparent",
+        border: isHover ? "1px solid #1f1f1f" : "1px solid transparent",
         paddingBottom: "10px",
       }}
       onClick={handleMusic}

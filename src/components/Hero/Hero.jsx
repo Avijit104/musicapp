@@ -6,12 +6,12 @@ function Hero() {
   return (
     <div
       style={{
-        width: "80vw",
-        height: "70vh",
-        padding: "20px",
+        width: "82vw",
+        height: "78vh",
         borderRadius: "15px",
-        overflowY: "scroll",
-        background:"linear-gradient(to bottom,  rgb(100, 100, 100) , #121212 30%)"
+        overflowY: "hidden",
+        boxSizing: "border-box", 
+        // border: "1px solid white"
       }}
     >
       {/* TODO wrap them in a div and add calc for width */}

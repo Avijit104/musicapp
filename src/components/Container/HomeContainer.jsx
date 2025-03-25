@@ -6,7 +6,7 @@ function HomeContainer({ children }) {
     <div
     style={{
       display: "flex",
-      margin: "-2px auto",
+      margin: "-7px auto 0px auto",
       padding: "5px",
       gap: "10px",
       width: "99vw",

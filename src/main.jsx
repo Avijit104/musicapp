@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Home, InstallApp, SideNav} from "./components/index.js";
+import { AllAritsts, Home, InstallApp, SideNav} from "./components/index.js";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
 import { HomePage, LoginPage, SignupPage } from "./pages";
@@ -29,6 +29,10 @@ const router = createBrowserRouter([
             path: "/install",
             element: <InstallApp />
           },
+          {
+            path: "/artists",
+            element: <AllAritsts />
+          }
         ],
       },
       {

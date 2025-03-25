@@ -52,16 +52,30 @@ function SideNav() {
           </div>
           <div
             className="content-container"
-            style={{ width: "100%", height: "50%", overflowX: "scroll" }}
+            style={{ width: "100%", height: "50%", overflowX: "scroll", position:"relative", marginTop: "10px" }}
           >
+            <div
+                className="style-div"
+                style={{
+                  width: "18%",
+                  height: "50px",
+                  boxSizing: "border-box",
+                  // border: "1px solid white",
+                  background: "linear-gradient(to bottom, #121212, transparent)",
+                  position:"fixed",
+                  zIndex: "1"
+                }}
+              ></div>
             <div
               className="content"
               style={{
                 width: "100%",
                 height: "fit-content",
                 padding: "20px 0px",
+                position:"relative"
               }}
             >
+              
               <div
                 className="playlist"
                 style={{
@@ -70,6 +84,7 @@ function SideNav() {
                   backgroundColor: "#1f1f1f",
                   boxSizing: "border-box",
                   borderRadius: "20px",
+                  marginTop : "20px"
                 }}
               >
                 <h4>Create Your own Playlist</h4>
@@ -171,8 +186,8 @@ function SideNav() {
                 display: "flex",
                 outline: "none",
                 border: "1px solid white",
-                borderRadius: "25px", 
-                marginTop: "20px"
+                borderRadius: "25px",
+                marginTop: "20px",
               }}
             >
               <span>

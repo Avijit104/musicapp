@@ -18,6 +18,24 @@
   padding-left: 15px;
   font-size: 25px;
 }
+.inner-title{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px ;
+}
+.inner-title button{
+  margin-right: 50px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  color: gray;
+}
+.inner-title button:hover{
+  color: white;
+  text-decoration: underline;
+}
 
 .artists {
   width: 98%;

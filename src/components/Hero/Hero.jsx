@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 function Hero() {
   return (
     <div
+      className="hero-main"
       style={{
         width: "82vw",
         height: "78vh",

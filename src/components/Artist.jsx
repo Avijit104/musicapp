@@ -13,20 +13,25 @@ function Artist(props) {
     }
   return (
     <div
+    className="artist-main"
       style={{
         width: "20%",
-        height: "42vh",
+        minWidth: "200px",
+        // maxWidth: "236px",s
+        minHeight: "42vh",
         borderRadius: "15px",
         marginTop: "0px",
         paddingBottom: "15px",
         backgroundColor: isHover ? "#1f1f1f" : "transparent",
         border: isHover ? "1px solid #1f1f1f" : "1px solid transparent",
+        boxSizing: "border-box"
       }}
       onClick={handleArtist}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
       <div
+      className="artist-button"
         style={{
           width: "90%",
           aspectRatio: "1/1",
@@ -38,6 +43,7 @@ function Artist(props) {
         }}
       >
         <button
+        id="playBtn"
           style={{
             display: isHover ? "block" : "none",
             width: "25%",

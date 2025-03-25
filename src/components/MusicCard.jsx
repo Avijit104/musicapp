@@ -20,6 +20,7 @@ function MusicCard(props) {
         backgroundColor: isHover ? "#1f1f1f" : "transparent",
         border: isHover ? "1px solid #1f1f1f" : "1px solid transparent",
         paddingBottom: "10px",
+        boxSizing: "border-box"
       }}
       onClick={handleMusic}
       onMouseEnter={() => setIsHover(true)}

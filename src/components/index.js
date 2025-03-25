@@ -10,6 +10,7 @@ import Footer from "./Footer/Footer";
 import Home from "./InnerComponents/Home/Home";
 import PLayer from "./Player/PLayer";
 import InstallApp from "./InnerComponents/InstallApp/InstallApp";
+import AllAritsts from "./InnerComponents/AllArtists/AllAritsts";
 
 export {
   Header,
@@ -24,4 +25,5 @@ export {
   Home,
   PLayer,
   InstallApp,
+  AllAritsts
 };

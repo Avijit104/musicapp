@@ -1,7 +1,7 @@
 .hero-main{
     width: 80vw;
     /* border: 1px solid white; */
-    background:linear-gradient(to bottom,  rgb(100, 100, 100) , #121212 90%);
+    /* background:linear-gradient(to bottom,  rgb(100, 100, 100) , #121212 90%); */
     padding: 20px;
     overflow-y: scroll;
     border-radius: 15px;

@@ -89,7 +89,7 @@ function SideNav() {
               >
                 <h4>Create Your own Playlist</h4>
 
-                <p style={{ margin: "10px 0px" }}>
+                <p style={{ margin: "10px 0px", color: "white", fontSize: "15px" }}>
                   it&apos;s easy let us help you
                 </p>
 
@@ -122,7 +122,7 @@ function SideNav() {
                 }}
               >
                 <h4>let&apos;s find some podcasts to follow</h4>
-                <p style={{ margin: "10  px 0px" }}>
+                <p style={{ margin: "10px 0px", color: "white", fontSize :"15px" }}>
                   we&apos;ll keep you updated on new episodes
                 </p>
                 <button

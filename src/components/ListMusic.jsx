@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import MusicCard from "./MusicCard";
 import { useNavigate } from "react-router-dom";
 
 function ListMusic(props) {
+  const [hover, setHover] = useState(false)
   const navigate = useNavigate()
   const path = props ?.path || "/"
   return (
@@ -32,9 +33,12 @@ function ListMusic(props) {
               outline: "none",
               border: "none",
               fontWeight: "bold",
-              color: "gray",
+              color: hover ? "white" : "gray",
+              textDecoration: hover ? "underline" : "none",
               fontSize: "15px",
             }}
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
             onClick={() => (navigate(`${path}`))}
           >
             Show all

@@ -47,7 +47,7 @@ function Header() {
   };
   const handleBrowse = (e) => {
     e.preventDefault();
-    navigate('/hero')
+    navigate('/browse')
   }
 
   const nav = [

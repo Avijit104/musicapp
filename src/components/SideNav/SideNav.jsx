@@ -32,7 +32,7 @@ function SideNav() {
     <div className="sidenav">
       {auth ? (
         <div className="login-side">
-          <div className="header">
+          <div className="header-side">
             <button id="library">
               <span className="library-svg">
                 <svg
@@ -106,7 +106,7 @@ function SideNav() {
               </span>
             </button>
           </div>
-          <div className="all">
+          <div className="all-side">
             {arr.map((item) => (
               <div className="all-items">
                 <div

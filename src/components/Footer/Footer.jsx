@@ -35,7 +35,7 @@ function Footer() {
           </div>
         </div>
         <div className="social">
-          <button>
+          <button id="insta" >
             <span >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@ function Footer() {
               </svg>
             </span>
           </button>
-          <button>
+          <button id="twiter" >
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ function Footer() {
               </svg>
             </span>
           </button>
-          <button>
+          <button id="facebook" >
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

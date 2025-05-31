@@ -208,7 +208,7 @@ function Header(props) {
                   </button>
                 </li>
                 <li>
-                  <button id="support" onClick={() => console.log("support")}>
+                  <button id="support" onClick={() => navigate("/support")}>
                     Support
                   </button>
                 </li>

@@ -14,6 +14,7 @@ import AllAritsts from "./InnerComponents/AllArtists/AllAritsts";
 import Browse from "./InnerComponents/Browse/Browse";
 import TrandingSong from "./InnerComponents/TrandingSongs/TrandingSong";
 import Download from "./Download/Download";
+import Support from "./Support/Support";
 
 export {
   Header,
@@ -32,4 +33,5 @@ export {
   Browse,
   TrandingSong,
   Download,
+  Support,
 };

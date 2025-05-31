@@ -13,7 +13,13 @@ import {
 } from "./components/index.js";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
-import { DownloadPage, HomePage, LoginPage, SignupPage } from "./pages";
+import {
+  DownloadPage,
+  HomePage,
+  LoginPage,
+  SignupPage,
+  SupportPage,
+} from "./pages";
 
 const router = createBrowserRouter([
   {
@@ -61,6 +67,10 @@ const router = createBrowserRouter([
       {
         path: "/download",
         element: <DownloadPage />,
+      },
+      {
+        path: "/support",
+        element: <SupportPage />,
       },
     ],
   },

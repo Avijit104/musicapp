@@ -17,7 +17,12 @@ function Download() {
             <div className="main-content">
               <div className="heading">
                 <h1>
-                  Download <Logo colorOuter="#ffffff" colorInner="#ffffff" />
+                  Download{" "}
+                  <Logo
+                    colorOuter="#ffffff"
+                    colorInner="#ffffff"
+                    fontSize="3rem"
+                  />
                 </h1>
               </div>
               <p>Play millions of songs and poscasts on your device</p>

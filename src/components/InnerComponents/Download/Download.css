@@ -31,12 +31,12 @@
   font-size: 3rem;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .download main p {
   color: #ffffff;
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 10px;
 }
 .download main a {
   width: 100%;

@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../../Header/Header";
-import Logo from "../../Logo";
+import Header from "../Header/Header";
+import Logo from "../Logo";
 import { Link } from "react-router-dom";
 import "./Download.css";
-import Footer from "../../Footer/Footer";
+import Footer from "../Footer/Footer";
 function Download() {
   return (
     <>

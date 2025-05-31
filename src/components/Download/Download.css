@@ -8,7 +8,7 @@
   overflow: scroll;
 }
 .download main {
-  background-image: url("../../../assets/download-hero.jpg");
+  background-image: url("../../assets/download-hero.jpg");
   background-size: cover;
   background-position: top;
   height: 80%;
@@ -79,7 +79,7 @@
   font-size: 1.01rem;
 }
 .download-all {
-  background-image: url("../../../assets/download-all.jpg");
+  background-image: url("../../assets/download-all.jpg");
   height: 60vh;
   background-size: cover;
   background-position: center;

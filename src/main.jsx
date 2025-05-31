@@ -6,7 +6,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import {
   AllAritsts,
   Browse,
-  Download,
   Home,
   InstallApp,
   SideNav,
@@ -14,7 +13,7 @@ import {
 } from "./components/index.js";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
-import { HomePage, LoginPage, SignupPage } from "./pages";
+import { DownloadPage, HomePage, LoginPage, SignupPage } from "./pages";
 
 const router = createBrowserRouter([
   {
@@ -61,7 +60,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/download",
-        element: <Download />,
+        element: <DownloadPage />,
       },
     ],
   },

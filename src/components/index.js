@@ -13,6 +13,7 @@ import InstallApp from "./InnerComponents/InstallApp/InstallApp";
 import AllAritsts from "./InnerComponents/AllArtists/AllAritsts";
 import Browse from "./InnerComponents/Browse/Browse";
 import TrandingSong from "./InnerComponents/TrandingSongs/TrandingSong";
+import Download from "./InnerComponents/Download/Download";
 
 export {
   Header,
@@ -29,5 +30,6 @@ export {
   InstallApp,
   AllAritsts,
   Browse,
-  TrandingSong
+  TrandingSong,
+  Download,
 };

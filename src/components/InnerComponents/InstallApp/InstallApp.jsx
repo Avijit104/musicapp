@@ -15,10 +15,8 @@ function InstallApp() {
               Bar integration and a Friend Activity feed that lets you see what
               your friends are listening to in real time.
             </p>
-            <button id="download" >
-              Download
-            </button>
-            <p id="last" >download directly from ViveStream</p>
+            <button id="download">Download</button>
+            <p id="last">download directly from ViveStream</p>
           </div>
           <div className="image"></div>
         </div>

@@ -1,10 +1,18 @@
 import React from "react";
 
-function Logo() {
+function Logo(props) {
   return (
-    <h1 className="logo" >
-     <p> Vibe<span className="logo-color">Stream</span></p>
-    </h1>
+    <h2 className="logo">
+      <p
+        style={{
+          color: `${props.colorOuter}`,
+          fontSize: "3rem",
+          fontWeight: "bold",
+        }}
+      >
+        Vibe<span style={{ color: `${props.colorInner}` }}>Stream</span>
+      </p>
+    </h2>
   );
 }
 

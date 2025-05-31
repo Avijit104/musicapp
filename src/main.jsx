@@ -3,7 +3,15 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { AllAritsts, Browse, Home, InstallApp, SideNav, TrandingSong} from "./components/index.js";
+import {
+  AllAritsts,
+  Browse,
+  Download,
+  Home,
+  InstallApp,
+  SideNav,
+  TrandingSong,
+} from "./components/index.js";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
 import { HomePage, LoginPage, SignupPage } from "./pages";
@@ -27,20 +35,20 @@ const router = createBrowserRouter([
           },
           {
             path: "/install",
-            element: <InstallApp />
+            element: <InstallApp />,
           },
           {
             path: "/artists",
-            element: <AllAritsts />
+            element: <AllAritsts />,
           },
           {
             path: "/browse",
-            element: <Browse />
+            element: <Browse />,
           },
           {
             path: "/tranding",
-            element: <TrandingSong />
-          }
+            element: <TrandingSong />,
+          },
         ],
       },
       {
@@ -50,6 +58,10 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignupPage />,
+      },
+      {
+        path: "/download",
+        element: <Download />,
       },
     ],
   },

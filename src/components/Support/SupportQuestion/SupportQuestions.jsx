@@ -8,14 +8,15 @@ function SupportQuestions(props) {
   return (
     <div className="all-questions">
       <div className="questions">
-        <div className="question" id={props.qid}>
+        <div
+          className="question"
+          onClick={() => {
+            displayExpand(props.qid);
+          }}
+          id={props.qid}
+        >
           <p>{props.question}</p>
-          <button
-            id={props.qid}
-            onClick={() => {
-              displayExpand(props.qid);
-            }}
-          >
+          <button id={props.qid}>
             {expand ? (
               <span id="afterExpand">
                 <svg
@@ -45,7 +46,6 @@ function SupportQuestions(props) {
         </div>
         {expand && (
           <>
-            <div className="question-border"></div>
             <div className="answer">
               <ul>
                 {props.ansList.map((item) => (

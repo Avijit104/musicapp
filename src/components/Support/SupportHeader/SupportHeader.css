@@ -28,13 +28,14 @@ nav {
   align-items: center;
   gap: 30px;
   margin-right: 5px;
+  padding: 5px 10px;
 }
 #support-header-logo:hover {
   transform: none;
 }
 .right-elements button {
   font-size: 1.01rem;
-  background-color: transparent;
+  background-color: #000;
   border: none;
   outline: none;
   font-weight: bold;
@@ -45,13 +46,13 @@ nav {
 }
 
 #support-login {
-  padding: 15px 30px;
+  padding: 10px 30px;
   background-color: #1ed760;
   border-radius: 30px;
   color: #000000;
 }
 .support-premium-opt {
-  background-color: #121212;
+  background-color: #212121;
   padding: 20px;
   border-radius: 10px;
   position: absolute;

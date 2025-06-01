@@ -1,3 +1,83 @@
+* {
+  overflow: scroll;
+}
+.support {
+  width: 100vw;
+  height: 100vh;
+  /* overflow: scroll; */
+}
+.support main {
+  width: 100%;
+  background: linear-gradient(178deg, #048531, #121212 28%);
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.support-hero {
+  margin-top: 5vh;
+}
+.support-hero p {
+  font-size: 1rem;
+  color: #9f9c9c;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.support-hero h4 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.support-hero span {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.support-hero span a {
+  color: #1bce5a;
+}
+
+.support-search {
+  width: 40vw;
+  margin-top: 40px;
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.support-search button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.support-search button span {
+  padding: 15px;
+  background-color: #fff;
+  padding-right: 0px;
+}
+.support-search input {
+  width: 90%;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 12px;
+  border: none;
+  outline: none;
+  color: #000;
+  font-size: 1.2rem;
+}
+.support-questions {
+  margin-top: 30px;
+  border-radius: 10px;
+}
+.question-border {
+  height: 1px;
+  background-color: #7c7c7c;
+}
 .support-footer {
   width: 82vw;
   margin: 10px auto;

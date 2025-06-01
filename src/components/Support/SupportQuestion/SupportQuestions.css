@@ -1,0 +1,32 @@
+.all-questions {
+  width: 100%;
+  /* border: 1px solid white; */
+  box-sizing: border-box;
+  background-color: #212121;
+  transform: 3s ease-in-out;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  align-items: center;
+}
+.question p {
+  font-weight: bold;
+}
+.question button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.question button span {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  /* border: 1px solid white; */
+}
+.answer ul li {
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+}

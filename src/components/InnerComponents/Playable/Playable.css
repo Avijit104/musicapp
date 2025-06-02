@@ -1,0 +1,55 @@
+.playable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.playable:hover {
+  background-color: #414040;
+}
+.playable .playable-details {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.queue .playable-image {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+}
+.queue .playable-name h2 {
+  font-size: 1.1rem;
+}
+.queue .playable-name p {
+  font-size: 1rem;
+  color: #ececec;
+}
+.queue .playable-threedot button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.playable .playable-threedot-options {
+  width: 200px;
+  position: absolute;
+  right: 2vw;
+  bottom: 25vh;
+  background-color: #282828;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 10px;
+}
+.playable .playable-threedot-options li {
+  padding: 15px 0px 0px 0px;
+}
+.playable .playable-threedot-options li button {
+  font-size: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}

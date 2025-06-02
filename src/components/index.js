@@ -15,6 +15,7 @@ import Browse from "./InnerComponents/Browse/Browse";
 import TrandingSong from "./InnerComponents/TrandingSongs/TrandingSong";
 import Download from "./Download/Download";
 import Support from "./Support/Support";
+import SidePlayer from "./SidePlayer/SidePlayer";
 
 export {
   Header,
@@ -34,4 +35,5 @@ export {
   TrandingSong,
   Download,
   Support,
+  SidePlayer,
 };

@@ -1,4 +1,11 @@
-import { Header, Hero, HomeContainer, PLayer, SideNav } from "../components";
+import {
+  Header,
+  Hero,
+  HomeContainer,
+  PLayer,
+  SideNav,
+  SidePlayer,
+} from "../components";
 
 function HomePage() {
   return (
@@ -7,6 +14,7 @@ function HomePage() {
       <HomeContainer>
         <SideNav />
         <Hero />
+        <SidePlayer />
       </HomeContainer>
       <PLayer />
     </>

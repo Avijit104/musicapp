@@ -6,7 +6,7 @@ const playInitial = {
 };
 
 const PlaySlice = createSlice({
-  name: play,
+  name: "play",
   initialState: playInitial,
   reducers: {
     playStart: (state, acttion) => {

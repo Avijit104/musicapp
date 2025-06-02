@@ -34,6 +34,6 @@ export {
   Browse,
   TrandingSong,
   Download,
-  Support,
   SidePlayer,
+  Support,
 };

@@ -8,6 +8,7 @@ import {
 } from "../components";
 
 function HomePage() {
+  const thisTime = false;
   return (
     <>
       <Header />

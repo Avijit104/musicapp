@@ -1,0 +1,157 @@
+.side-player {
+  width: 35vw;
+  height: 78vh;
+  box-sizing: border-box;
+  background-color: #121212;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+.side-player .side-player-display {
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+}
+.side-player-details {
+  width: 100%;
+}
+.side-player-details .blur {
+  background-color: #1212125c;
+}
+.display-playable-details {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: space-between;
+  padding: 20px 20px;
+  color: #fff;
+}
+.display-playable-details .current-playable-header {
+  font-size: 1.2rem;
+  color: #ececec;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.current-playable-header .playable-header-details {
+  display: flex;
+  gap: 10px;
+}
+.current-playable-header .playable-header-details button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.current-playable-header .playable-header-buttons {
+  display: flex;
+  gap: 10px;
+}
+.display-playable-details .playable-header-buttons button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.display-playable-details .current-playable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.display-playable-details .current-playable-details h2 {
+  font-size: 1.5rem;
+}
+.display-playable-details .current-playable-details p {
+  font-size: 1.02rem;
+  color: #ececec;
+}
+.display-playable-details .current-playable-buttons {
+  display: flex;
+  gap: 10px;
+}
+.display-playable-details .current-playable-buttons button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.credits {
+  background-color: #212121;
+  width: 95%;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.credits .credits-header,
+.credits .credits-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.credits .credits-header {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.credits .credits-header button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+.credits .credits-header button:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.credits .credits-details {
+  padding: 10px;
+}
+.credits .credits-details h2 {
+  font-size: 1.1rem;
+}
+.credits .credits-details p {
+  font-size: 1rem;
+}
+.credits .credits-details button {
+  background-color: transparent;
+  border: 1px solid #b6b6b6;
+  padding: 5px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+}
+.credits .credits-details button:hover {
+  transform: scale(1.1);
+  border: 1px solid #fff;
+}
+.queue {
+  background-color: #212121;
+  width: 95%;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.queue .queue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.queue .queue-header h2 {
+  font-size: 1.4rem;
+}
+.queue .queue-header button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.queue .queue-header button:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
